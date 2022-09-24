@@ -107,14 +107,8 @@ p {
   color: var(--color-logo);
 }
 
-.secondary-container {
-  display: flex;
-  margin-left: 305px;
-}
-
 .secondary-list {
   display: flex;
-  margin-left: auto;
   align-items: center;
   margin-left: auto;
 }
@@ -123,16 +117,21 @@ p {
   margin-right: 50px;
 }
 
+.secondary-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .secondary-link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  width: 10px;
-  height: 12px;
   color: var(--font-color-primary);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -144,23 +143,32 @@ p {
 }
 
 .secondary-svg {
-  align-items: center;
-  justify-content: center;
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
 
+.secondary-svg-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
 .logo {
-  color: var(--color-logo);
+  display: flex;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  color: var(--color-logo);
 }
 
 .logo_heder {
   color: var(--logo-black);
+}
+
+.logo_footer {
+  color: var(--white-color);
 }
 
 .button {
@@ -410,16 +418,16 @@ p {
   margin-bottom: 40px;
 }
 
-.features-list {
+.features__list {
   display: flex;
   margin: 0;
 }
 
-.features-item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.features-container {
+.features__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -428,12 +436,12 @@ p {
   background-color: var(--azur-background);
 }
 
-.features-svg {
+.features__svg {
   width: 70px;
   height: 70px;
 }
 
-.features-title {
+.features__title {
   margin-bottom: 10px;
   font-family: Roboto;
   font-weight: 700;
@@ -442,7 +450,7 @@ p {
   text-transform: uppercase;
 }
 
-.features-text {
+.features__text {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -617,10 +625,6 @@ p {
 .footer-container {
   display: flex;
   align-items: baseline;
-}
-
-.logo_footer {
-  color: var(--logo-black);
 }
 
 .footer-address {

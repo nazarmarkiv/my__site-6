@@ -22,9 +22,16 @@
     border-radius: 2px;
   }
   
-  .input-checkbox:focus + .icon {
+  .input-checkbox:checked + .icon {
     border-color: var(--accent-color);
     background-image: url(../image/icon\ check.svg);
+    /* border-style: contain; */
+    background-position: center;
+  }
+
+  .input-checkbox + .icon {
+    border-color: var(--accent-color);
+    background-image: unset;
     /* border-style: contain; */
     background-position: center;
   }
